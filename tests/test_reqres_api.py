@@ -27,7 +27,7 @@ def test_get_single_user_success():
 
 
 def test_get_non_existing_user_returns_404():
-    response = requests.get(f"{BASE_URL}/users/999")
+    response = requests.get(f"{BASE_URL}/users/0")
     assert response.status_code == 404
 
 
